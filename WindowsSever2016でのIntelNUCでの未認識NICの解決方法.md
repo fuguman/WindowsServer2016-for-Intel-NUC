@@ -33,11 +33,12 @@ C:\>bcdedit /set nointegritychecks ON
 -[Intel NUC用 LANドライバ](https://downloadcenter.intel.com/ja/downloads/eula/26481/-NUC7i-x-bn-?httpDown=https%3A%2F%2Fdownloadmirror.intel.com%2F26481%2Feng%2FLAN-21.1.zip)
 ダウンロードしたファイルをUSBメモリで設定する、Windows Serer2016に入れ任意のフォルダで解凍します。
 
-## 認識していないイーサネットコントローラの確認をします。
+## ４．認識していないイーサネットコントローラの確認をします。
 NUCのデバイスマネージャを起動します。（Windows右クリック→デバイスマネージャ）
 イーサネットコントローラのツリーを右クリックでプロパティを開き、詳細タブでプロパティにハードウェアIDを選択します。
+![デバイスマネージャイメージ](./devicemanager1.png)
 
-## ４．Power Shellを起動し、３．で解凍したフォルダに移動してドライバを探します。
+## ５．Power Shellを起動し、３．で解凍したフォルダに移動してドライバを探します。
 ![コマンド実行例](./powershell.png)
 Intel NUC(NUC6i5SYK)の場合は、Windows10およびWindows2016用のドライバのインストール用の情報はe1d65x64.infにありました。
 このe1d65x64.infファイルをテキストエディタ等で下記の編集を行いました。
