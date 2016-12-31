@@ -26,7 +26,7 @@ C:\>bcdedit /set TESTSIGNING ON
 C:\>bcdedit /set nointegritychecks ON
 ````
 入力後、OSを再起動します。すると右下にテストモードと表示されます。
--[テストモードの画面](./images/testmode.png)
+-[テストモードの画面](./testmode.png)
 
 ## ３．最新のNUCドライバをダウンロードします。（私はIntelのサイトからをLAN-21.zipをダウンロードしました。）
 私は、これをダウンロードして使用しました。
@@ -41,7 +41,7 @@ NUCのデバイスマネージャを起動します。（Windows右クリック�
 -[コマンド実行例](./images/powershell.png)
 Intel NUC(NUC6i5SYK)の場合は、Windows10およびWindows2016用のドライバのインストール用の情報はe1d65x64.infにありました。
 このe1d65x64.infファイルをテキストエディタ等で下記の編集を行いました。
--[infファイル](./images/inffile.png)
+-[infファイル](./inffile.png)
 
 [ControlFlags]以下を";"を使ってコメントアウトします。
 ````
@@ -106,7 +106,7 @@ Intel NUC(NUC6i5SYK)の場合は、Windows10およびWindows2016用のドライ�
 
 ## ５．４で編集したINFファイルを右クリックし、インストールするとドライバの認識がされます。
 最終的にデバイスマネージャから見ると以下の様になります。
--[ドライバ認識後のデバイスマネージャ](./images/devicemanager.png)
+-[ドライバ認識後のデバイスマネージャ](./devicemanager.png)
 
 ## ６．テストモードを終了するため以下のコマンドを実行し、OSを再起動します。
 ````
